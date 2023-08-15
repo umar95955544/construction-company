@@ -22,7 +22,8 @@ function HomeBanner() {
             backgroundColor: '#FFB400',
             text: 'VIEW OUR WORK',
             border: '6px solid #FFB400',
-            color: '#fff'
+            color: '#fff',
+            onclick: '/services'
       }];
   return (
     <Container fluid style={style}>

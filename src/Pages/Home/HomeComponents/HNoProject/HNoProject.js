@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import AboutImage1 from '../../../../Assets/Images/AboutImage.svg'
 import RightIconYellowImg from '../../../../Assets/Images/RightIconWhite.svg'
 import BannerRight from '../../../../Components/Reuseable/BannerRight/BannerRight'
 import YellowLine from '../../../../Assets/Images/NoProjectYellowLine.svg'
@@ -39,6 +38,7 @@ function HNoProject() {
         text: 'ONLINE ESTIMATE FORM',
         color: '#FFB400',
         border: '5px solid #FFB400',
+        onclick: '/contact'
     };
     const details = {
         heading: 'No Project Too Big Or Too Small',
@@ -90,6 +90,7 @@ function HNoProject() {
                                 text={contactButton.text}
                                 color={contactButton.color}
                                 border={contactButton.border}
+                                onclick={contactButton.onclick}
                             />
                         </Col>
                     </Row>

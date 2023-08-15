@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Button from '../Button/Button'
 
-function VideoSectionComp({ backgroundColor, color, heading, image, paragraph, buttonData, YouTube, backgroundColor1, fontSize, number1, text2, text3, text4, text5, text6, text7 }) {
+function VideoSectionComp({ backgroundColor, color, heading, image, paragraph,onclick, buttonData, YouTube, backgroundColor1, fontSize, number1, text2, text3, text4, text5, text6, text7 }) {
     const textStyle = {
         color: color,
     };
@@ -27,14 +27,12 @@ function VideoSectionComp({ backgroundColor, color, heading, image, paragraph, b
     const style4 = {
         height: '380px'
     }
-    const style5 = {
-        padding: '2rem 0rem 1rem 1rem',
-    }
     const button = {
         padding: '0.8rem 2.5rem',
         backgroundColor: '#fff',
         text: 'ONLINE ESTIMATE FORM',
         border: '4px solid #1F1F1F',
+        onclick: '/contact'
     }
 
     return (
@@ -59,6 +57,7 @@ function VideoSectionComp({ backgroundColor, color, heading, image, paragraph, b
                                 text={btn.text}
                                 border={btn.border}
                                 color={btn.color}
+                                onclick={btn.onclick}
                             />
                         </div>
                     ))}
@@ -72,13 +71,14 @@ function VideoSectionComp({ backgroundColor, color, heading, image, paragraph, b
                             <h6 style={style2}>{text2}</h6>
                             <p style={style3}>{number1}</p>
                         </Col>
-                        <Col lg={6} style={style5} className='text-center d-flex align-items-center justify-content-center'>
+                        <Col lg={6} className='text-center d-flex align-items-center justify-content-center'>
                             <Button
                                 padding={button.padding}
                                 backgroundColor={button.backgroundColor}
                                 text={button.text}
                                 border={button.border}
                                 color={button.color}
+                                onclick={button.onclick}
                             />
                         </Col>
                     </Row>

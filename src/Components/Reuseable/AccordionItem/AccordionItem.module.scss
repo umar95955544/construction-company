@@ -1,0 +1,35 @@
+.accordionItem {
+    border-top: 1px solid #f7f7f7;
+    background-color: white;
+  }
+  
+  .button {
+    font-size: 16px;
+    text-align: left;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8px;
+    cursor: pointer;
+    border: 0px solid #f7f7f7;
+    background-color: white;
+    padding-left: 1rem;
+  }
+  
+  .control {
+    font-size: 20px;
+  }
+  
+  .answer {
+    padding: 20px;
+  }
+  
+  /* activate toggle */
+  .answerWrapper {
+    height: 0;
+    overflow: hidden;
+    transition: height ease 0.2s;
+  }

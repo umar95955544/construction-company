@@ -12,7 +12,7 @@ function ServicesQuote() {
             text: 'FREE QUOTE',
             color: '#FFB400',
             border: '5px solid #FFB400',
-            
+            onclick: '/contact'
         }
     ];
   return (
@@ -20,13 +20,14 @@ function ServicesQuote() {
     <div className={darkMode ?  `Content-dark`:`Content-light`}>
     {quoteData.map((quote, index) => (
         <div key={index} style={{boxShadow: '0px 4px 20px 0px #00000040'}}>
-            <QuoteButton
+            <QuoteButton 
                 heading={quote.heading}
                 padding={quote.padding}
                 backgroundColor={quote.backgroundColor}
                 text={quote.text}
                 color={quote.color}
                 border={quote.border}
+                onclick={quote.onclick}
             />
         </div>
     ))}

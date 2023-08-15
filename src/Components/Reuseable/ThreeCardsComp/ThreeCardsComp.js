@@ -37,6 +37,7 @@ function ThreeCardsComp({image,title,text,text2,marginTop,border,height,backgrou
                                     color={btn.color}
                                     width={btn.width}
                                     backgroundColor={btn.backgroundColor}
+                                    onclick={btn.onclick}
                                 />
                             </div>
                         ))}

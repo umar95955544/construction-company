@@ -12,6 +12,7 @@ function QuoteSection() {
             text: 'FREE QUOTE',
             color: '#FFB400',
             border: '5px solid #FFB400',
+            onclick: '/contact'
         }
     ];
   return (
@@ -26,6 +27,7 @@ function QuoteSection() {
                 text={quote.text}
                 color={quote.color}
                 border={quote.border}
+                onclick={quote.onclick}
             />
         </div>
     ))}

@@ -46,13 +46,15 @@ function ThreeCards() {
         backgroundColor: '#fff',
         color: '#666666',
         border: '1px solid #666666',
-        width: '100%'
+        width: '100%',
+        onclick: '/portfolio'
     }];
     const cardsbtnData = [{
         padding: '0.5rem 2.5rem',
         backgroundColor: '#fff',
         text: 'VIEW ALL',
         border: '4px solid #000000',
+        onclick: '/portfolio'
     }];
     return (
         <Container className={darkMode ? `Content-dark` : `Content-light`}>
@@ -88,6 +90,7 @@ function ThreeCards() {
                                     backgroundColor={cards.backgroundColor}
                                     text={cards.text}
                                     border={cards.border}
+                                    onclick={cards.onclick}
                                 />
                             </div>
                         ))}

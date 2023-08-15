@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Button from '../Button/Button'
 
-function QuoteButton({heading,padding,backgroundColor,text,color,border}) {
+function QuoteButton({heading,padding,backgroundColor,text,color,border,onclick}) {
   
   return (
    
@@ -18,7 +18,8 @@ function QuoteButton({heading,padding,backgroundColor,text,color,border}) {
                 text={text}
                 padding={padding}
                 color={color}
-                border={border}/>
+                border={border}
+                onclick={onclick}/>
             </Col>
         </Row>
     </Container>

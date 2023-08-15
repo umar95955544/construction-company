@@ -52,6 +52,7 @@ function NoProjectComp({ heading, image, text1, text2, text3, text4, text5, numb
                                     backgroundColor={btn.backgroundColor}
                                     text={btn.text}
                                     border={btn.border}
+                                    onclick={btn.onclick}
                                 />
                             </div>
                         ))}

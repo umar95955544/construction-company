@@ -14,7 +14,7 @@ function ClientImages() {
             <Row>
                 <Col>
                     <div>
-                        <img src={ClientImage} className='w-100'/>
+                        <img src={ClientImage} alt='' className='w-100'/>
                     </div>
                 </Col>
             </Row>

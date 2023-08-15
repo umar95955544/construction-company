@@ -38,6 +38,7 @@ function AboutImage() {
     text: 'FREE QUOTE',
     color: '#FFB400',
     border: '5px solid #FFB400',
+    onclick: '/contact'
   };
   return (
     <Container fluid style={style} className='gx-0'>
@@ -55,6 +56,7 @@ function AboutImage() {
               text={contactButton.text}
               color={contactButton.color}
               border={contactButton.border}
+              onclick={contactButton.onclick}
             />
           </div>
 

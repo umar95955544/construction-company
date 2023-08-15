@@ -19,6 +19,7 @@ function AboutBanner() {
             color: '#ffffff',
             paddingLeft: '1rem',
             border: '1px solid #FFB400',
+            onclick: '/contact'
         }
     ];
     const bannerData2 = [
@@ -67,6 +68,7 @@ const color2=[{
                         paddingTop={banner.paddingTop}
                         borderLeft={banner.borderLeft}
                         backgroundColor={banner.backgroundColor}
+                        onclick={banner.onclick}
                         backgroundColor1={backgroundColor1}
                         color1={color1}
                         color2={color2}

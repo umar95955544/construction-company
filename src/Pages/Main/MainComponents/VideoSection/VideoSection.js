@@ -16,7 +16,7 @@ function VideoSection() {
             text3: ' ',
             text4: ' ',
             text5: ' ',
-            
+            onclick:'/about',
             text2: 'Call for a Quote',
             number1:'(346) 234-6973',
           }];
@@ -55,6 +55,7 @@ function VideoSection() {
               text3={video.text3}
               text4={video.text4}
               text5={video.text5}
+              onclick={video.onclick}
               number1={video.number1}
 
           />

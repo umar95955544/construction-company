@@ -5,7 +5,7 @@ import Styles from './HeaderMain.module.scss'
 
 function HeaderMain({
   text, paddingTop, color,color1, color2, border, padding, paddingLeft,
-  borderLeft, backgroundImage, heading, paragraph, backgroundColor, backgroundColor1, bannerData2,
+  borderLeft, backgroundImage, heading, paragraph, backgroundColor, backgroundColor1, bannerData2,onclick
 }) {
   const style = {
     backgroundRepeat: 'no-repeat',
@@ -35,6 +35,7 @@ const style2={
                 padding={padding}
                 color={color}
                 border={border}
+                onclick={onclick}
               />
             </div>
           </div>

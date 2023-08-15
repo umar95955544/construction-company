@@ -31,14 +31,16 @@ function ServicesDetails() {
             backgroundColor: '#2A2A2A',
             text: 'GET A QUOTE',
             border: '5px solid #FFFFFF',
-            color: 'white'
+            color: 'white',
+            onclick: '/contact'
     }];
     const buttonData2=[{
         padding: '0.5rem 2.5rem',
         backgroundColor: '#FFB400',
         text: 'GET A QUOTE',
         border: '5px solid #FFFFFF',
-        color: 'white'
+        color: 'white',
+        onclick: '/contact'
 }];
 const style={
     backgroundColor: '#F7F7F7',

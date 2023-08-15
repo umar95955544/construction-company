@@ -22,7 +22,8 @@ function HomeBannerMid() {
             backgroundColor: '#FFB400',
             text: 'ABOUT US',
             border: '6px solid #FFB400',
-            color: '#fff'
+            color: '#fff',
+            onclick: '/about'
       }];
   return (
     <Container fluid style={style}>
@@ -40,7 +41,6 @@ function HomeBannerMid() {
                 </div>
             ))}
             </Col>
-           
         </Row>
     </Container>
   )

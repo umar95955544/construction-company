@@ -21,6 +21,7 @@ function HomeBannerComp({ image, heading, paragraph, btnData, color }) {
               text={btn.text}
               border={btn.border}
               color={btn.color}
+              onclick={btn.onclick}
             />
           ))}
       </div>

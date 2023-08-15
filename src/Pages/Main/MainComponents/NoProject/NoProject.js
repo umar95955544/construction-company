@@ -27,6 +27,7 @@ function NoProject() {
             backgroundColor: 'transparent',
             text: 'LEARN MORE',
             border: '4px solid #1F1F1F',
+            onclick: '/project'
         }
     ];
   return (

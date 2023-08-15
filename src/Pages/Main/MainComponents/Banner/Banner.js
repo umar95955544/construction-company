@@ -16,6 +16,7 @@ function Banner() {
             backgroundColor: '#FFB400',
             backgroundColor1: '#FFB400',
             text: 'VIEW OUR WORK',
+            onclick:'/portfolio',
             backgroundImage: MainBannerImg,
             color: '#ffffff',
             paddingLeft: '1rem',
@@ -72,6 +73,7 @@ const color2 =[{
                         color1={color1}
                         color2={color2}
                         text={banner.text}
+                        onclick={banner.onclick}
                         backgroundImage={banner.backgroundImage}
                         color={banner.color}
                         paddingLeft={banner.paddingLeft}

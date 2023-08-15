@@ -34,6 +34,7 @@ function ServicesDetailsComp({heading, image, paragraph, padding, buttonData1, b
                                     text={btn.text}
                                     border={btn.border}
                                     color={btn.color}
+                                    onclick={btn.onclick}
                                 />
                             
                         </div>
@@ -49,6 +50,7 @@ function ServicesDetailsComp({heading, image, paragraph, padding, buttonData1, b
                                     text={btn.text}
                                     border={btn.border}
                                     color={btn.color}
+                                    onclick={btn.onclick}
                                 />
                             
                         </div>

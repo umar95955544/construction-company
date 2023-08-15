@@ -21,6 +21,7 @@ function ServiceVideo() {
             text7: 'Sodales tristique',
             text2: 'Call for a Quote',
             number1:'(346) 234-6973',
+            onclick:'/contact'
           }];
   const buttonData = [{
                 backgroundColor:'#2A2A2A',
@@ -56,6 +57,7 @@ function ServiceVideo() {
               text5={video.text5}
               text6={video.text6}
               text7={video.text7}
+              onclick={video.onclick}
               number1={video.number1}
 
           />

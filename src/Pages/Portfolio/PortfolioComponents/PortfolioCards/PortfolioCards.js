@@ -109,7 +109,8 @@ function PortfolioCards() {
         backgroundColor: '#F7F7F7',
         color: '#666666',
         border: '1px solid #666666',
-        width: '100%'
+        width: '100%',
+        onclick: '/project'
     }];
     const style = {
         backgroundColor: '#F7F7F7',
