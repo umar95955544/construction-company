@@ -1,0 +1,15 @@
+@import '../../../../Components/mediaqueries.module';
+
+.leftSecHead {
+    padding: 8rem 8rem 8rem 0rem;
+    display: flex;
+    align-items: center;
+    @include md{
+        padding: 4rem 0rem 4rem 0rem;
+    justify-content: center;
+    }
+    @include tablet{
+        padding: 2rem 0rem 2rem 0rem;
+    justify-content: center;
+    }
+}

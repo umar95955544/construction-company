@@ -1,0 +1,21 @@
+@import '../../mediaqueries.module';
+
+.leftSecHead {
+    padding: 5rem 8rem 5rem 8rem;
+    @include md{
+        padding: 2rem;
+    }
+    @include tablet{
+        padding: 1rem;
+    }
+}
+
+.head{
+    font-size: 64px;
+    @include tablet {
+        font-size: 32px;
+    }
+    @include mobile{
+        font-size: 30px;
+    }
+}

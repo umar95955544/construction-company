@@ -1,0 +1,11 @@
+@import '../../mediaqueries.module';
+.CardImgTop{
+    border-radius: 0 !important;
+}
+.CardStyle {
+    border: none; 
+    margin: 1rem;
+    @include tablet{
+        margin: 0.5rem;
+    }
+}

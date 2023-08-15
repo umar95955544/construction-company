@@ -1,0 +1,8 @@
+@import "../../../../Components/mediaqueries.module";
+
+.cardsSet{
+    padding: 2rem 1rem;
+    @include tablet{
+        padding: 1rem 0rem;
+    }
+}

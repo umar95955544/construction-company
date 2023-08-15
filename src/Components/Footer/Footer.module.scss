@@ -1,0 +1,26 @@
+@import '../mediaqueries.module';
+
+.footerMain{
+    .footerColOne{
+        background: #FFB400;
+    }
+    
+    .inName, .inEmail, .inTextarea{
+        border-radius: 0 !important;
+    }
+    .imgFooter{
+        background-color: #2A2A2A;
+        display: flex;
+        justify-content: center;
+    }
+    .txtFooter{
+        padding: 3rem 4rem;
+        @include tablet{
+            padding: 1rem;
+        }
+    }
+    .Subtract{
+        display: flex;
+        align-items: flex-start;
+    }
+}

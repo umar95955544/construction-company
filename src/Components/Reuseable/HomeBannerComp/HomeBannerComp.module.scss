@@ -1,0 +1,11 @@
+@import '../../mediaqueries.module';
+
+.head{
+    font-size: 64px;
+    @include tablet {
+        font-size: 32px;
+    }
+    @include mobile{
+        font-size: 30px;
+    }
+}

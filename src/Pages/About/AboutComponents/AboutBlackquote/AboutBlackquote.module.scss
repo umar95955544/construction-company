@@ -1,0 +1,11 @@
+@import '../../../../Components/mediaqueries.module';
+
+.MainSec{
+    padding: 6rem 4rem;
+    @include md{
+        padding: 6rem 2rem;
+    } 
+    @include tablet{
+        padding: 2rem 1rem;
+    }
+}

@@ -1,0 +1,22 @@
+@import '../../../../Components/mediaqueries.module';
+
+.ColOne{
+    padding: 4rem 4rem 2rem 2rem;
+    @include tablet {
+        padding: 1rem;
+    }
+}
+.NoProjectCol{
+    padding: 6rem 4rem;
+    @include large {
+        padding: 8rem 3rem;
+    }
+    @include md{
+        @include large {
+            padding: 4rem 2rem;
+        }
+    }
+    @include tablet {
+        padding: 1rem;
+    }
+}

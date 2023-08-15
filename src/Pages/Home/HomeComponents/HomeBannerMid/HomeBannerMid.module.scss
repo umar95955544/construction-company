@@ -1,0 +1,11 @@
+@import '../../../../Components/mediaqueries.module';
+
+.colPadding{
+    padding: 4rem 20rem;
+    @include large{
+        padding: 4rem 10rem;
+    }
+    @include tablet{
+        padding: 2rem 1rem;
+    }
+}

@@ -1,0 +1,8 @@
+@import '../../../../Components/mediaqueries.module';
+
+.ColOne{
+    padding: 4rem 4rem 2rem 2rem;
+    @include tablet {
+        padding: 1rem;
+    }
+}
