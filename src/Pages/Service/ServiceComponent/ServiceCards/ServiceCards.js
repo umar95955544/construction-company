@@ -62,8 +62,7 @@ function ServiceCards() {
         backgroundColor: '#F7F7F7',
     }
   return (
-    <div className={darkMode ? `Content-dark` : `Content-light`}>
-            <Container fluid style={style}>
+            <Container fluid style={style} className={darkMode ? `Content-dark` : `Content-light`}>
                 <Container>
                     <Row className='py-5'>
                         <Col>
@@ -106,7 +105,6 @@ function ServiceCards() {
                     </Row>
                 </Container>
             </Container>
-        </div>
   )
 }
 

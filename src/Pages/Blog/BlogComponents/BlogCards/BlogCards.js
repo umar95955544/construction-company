@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import { Container, Row } from 'react-bootstrap'
 import ThreeCardsComp from '../../../../Components/Reuseable/ThreeCardsComp/ThreeCardsComp'
 import CardImg1 from '../../../../Assets/Images/BlogCardImg1.svg'
@@ -7,8 +7,10 @@ import CardImg3 from '../../../../Assets/Images/BlogCardImg3.svg'
 import CardImg4 from '../../../../Assets/Images/BlogCardImg4.svg'
 import CardImg5 from '../../../../Assets/Images/BlogCardImg5.svg'
 import CardImg6 from '../../../../Assets/Images/BlogCardImg6.svg'
+import { DarkModeContext } from '../../../../Assets/Context/DarkModeContext'
 
 function BlogCards() {
+  const { darkMode } = useContext(DarkModeContext);
   const cardsbtnFooter = [{
     border: 'none',
     backgroundColor: '#fff',
@@ -66,7 +68,7 @@ function BlogCards() {
     backgroundColor: '#F7F7F7',
   }
   return (
-    <Container fluid style={style1}>
+    <Container fluid style={style1} className={darkMode ? `Content-dark2` : `Content-light2`}>
       <Container className='py-5'>
         <Row>
           {cardsData.map((cards, index) => (

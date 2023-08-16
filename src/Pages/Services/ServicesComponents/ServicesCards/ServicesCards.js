@@ -53,8 +53,7 @@ function ServicesCards() {
         onclick: '/portfolio'
     }];
   return (
-    <div className={darkMode ? `Content-dark` : `Content-light`}>
-            <Container fluid>
+            <Container fluid className={darkMode ? `Content-dark` : `Content-light`}>
                 <Container>
                     <Row className='py-5'>
                         <Col>
@@ -97,7 +96,6 @@ function ServicesCards() {
                     </Row>
                 </Container>
             </Container>
-        </div>
   )
 }
 

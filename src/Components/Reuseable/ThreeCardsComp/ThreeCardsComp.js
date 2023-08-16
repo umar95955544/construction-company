@@ -1,10 +1,11 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import {Card} from 'react-bootstrap';
 import Button from '../Button/Button';
+import { DarkModeContext } from '../../../Assets/Context/DarkModeContext';
 import Styles from './ThreeCardsComp.module.scss';
 
 function ThreeCardsComp({image,title,text,text2,marginTop,border,height,backgroundColor,cardsbtnFooter}) {
-    
+  const { darkMode } = useContext(DarkModeContext);
     const style = {
       marginTop: marginTop,
       border: border,
@@ -12,15 +13,15 @@ function ThreeCardsComp({image,title,text,text2,marginTop,border,height,backgrou
     const style1={
       height: height,
     }
-    const style2={
+    const style3={
       backgroundColor: backgroundColor,
     }
     
   return (
 
-    <Card className={Styles.CardStyle} style={style2}>
+    <Card style={style3} className={`${Styles.CardStyle} ${darkMode ? `Content-dark` : `Content-light`}`}>
       <Card.Img variant="top" src={image} className={Styles.CardImgTop}/>
-      <Card.Body style={style} >
+      <Card.Body style={style}>
         <Card.Title className='py-2'>{title}</Card.Title>
         <Card.Text className="text-black-50">
           {text2}

@@ -1,13 +1,15 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import RightIconYellowImg from '../../../../Assets/Images/RightIconWhite.svg'
 import BannerRight from '../../../../Components/Reuseable/BannerRight/BannerRight'
 import YellowLine from '../../../../Assets/Images/NoProjectYellowLine.svg'
 import Button from '../../../../Components/Reuseable/Button/Button'
 import HeadingPara from '../../../../Components/Reuseable/HeadingPara/HeadingPara'
+import { DarkModeContext } from '../../../../Assets/Context/DarkModeContext'
 import Styles from './HNoProject.module.scss'
 
 function HNoProject() {
+    const { darkMode } = useContext(DarkModeContext);
     const aboutLeftData = [
         {
             text: '',
@@ -56,7 +58,7 @@ function HNoProject() {
     }
 
     return (
-        <Container fluid style={style} className='gx-0'>
+        <Container fluid style={style} className="gx-0">
             <Row className='gx-0'>
                 <Col lg={4} className={Styles.ColOne}>
 
@@ -66,7 +68,7 @@ function HNoProject() {
 
                 </Col>
                 <Col lg={8} >
-                    <Row className={`gx-0 ${Styles.NoProjectCol}`} style={{backgroundColor: '#F7F7F7'}} >
+                    <Row className={`gx-0 ${Styles.NoProjectCol} ${darkMode ? 'Content-dark2' : 'Content-light2'}`} style={{backgroundColor: '#F7F7F7'}} >
                     <HeadingPara
                         heading={details.heading}
                         image={details.image}

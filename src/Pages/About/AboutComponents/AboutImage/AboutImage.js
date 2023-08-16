@@ -1,12 +1,14 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import AboutImage1 from '../../../../Assets/Images/AboutImage.svg'
 import RightIconYellowImg from '../../../../Assets/Images/RightIconYellow.svg'
 import BannerRight from '../../../../Components/Reuseable/BannerRight/BannerRight'
 import Button from '../../../../Components/Reuseable/Button/Button'
+import { DarkModeContext } from '../../../../Assets/Context/DarkModeContext'
 import Styles from './AboutImage.module.scss'
 
 function AboutImage() {
+  const { darkMode } = useContext(DarkModeContext);
   const aboutLeftData = [
     {
       text: 'Our Services',
@@ -41,7 +43,7 @@ function AboutImage() {
     onclick: '/contact'
   };
   return (
-    <Container fluid style={style} className='gx-0'>
+    <Container fluid style={style} className={`gx-0 ${darkMode ? `Content-dark` : `Content-light`}`}>
       <Row className='gx-0'>
         <Col lg={4} className={Styles.ColOne}>
 
