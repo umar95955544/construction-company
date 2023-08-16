@@ -1,6 +1,8 @@
 import React from 'react'
 import Button from '../Button/Button'
 import { Container, Row, Col } from 'react-bootstrap'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Styles from './HeaderMain.module.scss'
 
 function HeaderMain({
@@ -23,8 +25,8 @@ const style2={
 }
   return (
     <Container fluid style={{ ...style, backgroundImage: `url(${backgroundImage})` }}>
-      <Row>
-        <Col lg={8}>
+      <Row >
+        <Col lg={8} data-aos="fade-up">
           <div className={Styles.leftSecHead}>
             <h1 className={Styles.head} style={style1}>{heading}</h1>
             <p style={style2}>{paragraph}</p>
@@ -40,7 +42,7 @@ const style2={
             </div>
           </div>
         </Col>
-        <Col lg={4} style={{ backgroundColor: backgroundColor1[0].backgroundColor }} className='p-5'>
+        <Col lg={4} style={{ backgroundColor: backgroundColor1[0].backgroundColor }} className='p-5' data-aos="fade-down">
         {bannerData2.length > 0 && <h3 className='fw-bold' style={{ color: color2[0].color }}>{bannerData2[0].text}</h3>}
         {Array.isArray(bannerData2) &&
             bannerData2.slice(1).map((service, index) => ( 
