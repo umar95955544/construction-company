@@ -62,8 +62,7 @@ function RelatedProject() {
         backgroundColor: '#F7F7F7',
     }
     return (
-        <div className={darkMode ? `Content-dark` : `Content-light`}>
-            <Container fluid style={style}>
+            <Container fluid className={darkMode ? `Content-dark` : `Content-light`} style={style}>
                 <Container>
                     <Row className='py-5'>
                         <Col>
@@ -106,7 +105,6 @@ function RelatedProject() {
                     </Row>
                 </Container>
             </Container>
-        </div>
     )
 }
 

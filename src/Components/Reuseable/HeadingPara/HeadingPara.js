@@ -1,7 +1,9 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import { Row,Col } from 'react-bootstrap'
+import { DarkModeContext } from '../../../Assets/Context/DarkModeContext';
 
 function HeadingPara({heading,image, paragraph, paragraph1,display,alignItems,justifyContent,paddingTop,flexDirection}) {
+    const { darkMode } = useContext(DarkModeContext);
     const style={
         display: display,      
         alignItems: alignItems,    
@@ -13,7 +15,7 @@ function HeadingPara({heading,image, paragraph, paragraph1,display,alignItems,ju
     }
   return (
     <>
-    <Row>
+    <Row className={darkMode ? 'Content-dark2' : 'Content-light2'}>
         <div style={style}>
         <h1>
             {heading}
@@ -23,7 +25,7 @@ function HeadingPara({heading,image, paragraph, paragraph1,display,alignItems,ju
         </div>
         </div>
     </Row>
-    <Row style={style1}>
+    <Row style={style1} className={darkMode ? 'Content-dark2' : 'Content-light2'}>
         <Col md={6}>
             <p>{paragraph}</p>
         </Col>

@@ -116,8 +116,7 @@ function PortfolioCards() {
         backgroundColor: '#F7F7F7',
     }
     return (
-        <div className={darkMode ?  `Content-dark`:`Content-light`}>
-        <Container fluid style={style} >
+        <Container fluid style={style} className={darkMode ? `Content-dark` : `Content-light`}>
             <Container className='py-5'>
                 <Row >
                     {cardsData.map((cards, index) => (
@@ -137,7 +136,6 @@ function PortfolioCards() {
                 </Row>
             </Container>
         </Container>
-        </div>
     )
 }
 

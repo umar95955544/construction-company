@@ -1,13 +1,15 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { Container,Row,Col } from 'react-bootstrap'
 import YellowLine from '../../../../Assets/Images/NoProjectYellowLine.svg'
 import ServicesDetailsComp from '../../../../Components/Reuseable/ServicesDetailsComp/ServicesDetailsComp';
 import servicesListItems from '../../../../Assets/Data/ServicesListItems'
 import servicesListItems1 from '../../../../Assets/Data/ServicesListItems1'
 import servicesListItems2 from '../../../../Assets/Data/ServicesListItems2'
+import { DarkModeContext } from '../../../../Assets/Context/DarkModeContext';
 
 
 function ServicesDetails() {
+    const { darkMode } = useContext(DarkModeContext);
     const servicesData= {
         heading: 'Building Construction',
         image: YellowLine,
@@ -47,7 +49,7 @@ const style={
 }
 
   return (
-    <Container fluid >
+    <Container fluid className={darkMode ? `Content-dark2` : `Content-light2`} >
         <Row>
             <Col md={3}>
 

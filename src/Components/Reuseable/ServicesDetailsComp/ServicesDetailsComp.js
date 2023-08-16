@@ -1,11 +1,13 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import { Row, Col } from 'react-bootstrap'
 import Button from '../Button/Button'
+import { DarkModeContext } from '../../../Assets/Context/DarkModeContext';
 
 function ServicesDetailsComp({heading, image, paragraph, padding, buttonData1, buttonData2,servicesListItems}) {
+    const { darkMode } = useContext(DarkModeContext);
     return (
         <>
-            <Row style={{padding}} className='text-md-start text-center'> 
+            <Row style={{padding}} className={`text-md-start text-center ${darkMode ? `Content-dark` : `Content-light`}`}> 
                 <h1>{heading}</h1>
                 <div className='py-2'>
                     <img src={image} alt='' />
@@ -22,7 +24,7 @@ function ServicesDetailsComp({heading, image, paragraph, padding, buttonData1, b
                         </div>
                     ))}
             </Row>
-            <Row>
+            <Row className={darkMode ? `Content-dark` : `Content-light`}>
             <Col md={6} className='text-center p-4' style={{backgroundColor: buttonData1[0].backgroundColor}}>
             {Array.isArray(buttonData1) &&
                     buttonData1.map((btn, index) => (
