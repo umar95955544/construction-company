@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Main from './Pages/Main/Main';
@@ -8,6 +8,7 @@ import Portfolio from './Pages/Portfolio/Portfolio';
 import Service from './Pages/Service/Service';
 import Services from './Pages/Services/Services';
 import Contact from './Pages/Contact/Contact';
+import AOS from "aos";
 import About from './Pages/About/About';
 import Home from './Pages/Home/Home';
 import { DarkModeContext } from './Assets/Context/DarkModeContext';
@@ -17,7 +18,10 @@ import './App.scss';
 
 function App() {
   const {darkMode} = useContext(DarkModeContext);
-
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div className={darkMode ? `Container-dark` : `Container-light`}>
     <Router>
